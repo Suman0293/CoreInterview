@@ -1,17 +1,20 @@
 package javabasic;
 
 public class Armstrong {
-
     public static void main(String[] args) {
-        int a = 158;
-        int n = a;
+        int a = 153;
+        int b = a;
         int sum = 0;
-        int r;
+        int c;
 
-        while (n > 0) {
-            r = n % 10;
-            sum = sum + (r * r * r);
-            n = n / 10;
+        while (b > 0) {
+            c = b % 10;
+            System.out.println("c = " + c);
+            sum = sum + (c * c * c);
+            System.out.println("sum = " + sum);
+            b = b / 10;
+            System.out.println("b = " + b);
+
         }
         if (a == sum) {
             System.out.println("No. is Armstrong");
