@@ -17,16 +17,17 @@ public class TestShape {
        System.out.println(s[1].area());
       //  System.out.println(r.area());
 
-        double a = area(s);
-        System.out.println(a);
+        /*double a = area(s);
+        System.out.println(a);*/
     }
 
-    public static double area(Shape[] s) {
-        double totalArea = 0;
+    public static void area(Shape[] s) {
+       // double totalArea = 0;
         for(int i=0; i<s.length; i++){
-            totalArea += s[i].area();
+          //  totalArea += s[i].area();
+            s[i].area();
         }
-        return  totalArea;
+        //return  totalArea;
 
     }
 }
