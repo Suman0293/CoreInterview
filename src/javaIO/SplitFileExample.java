@@ -21,7 +21,7 @@ public class SplitFileExample {
         System.out.println("no of lines = " + count);
 
         //no of files
-        int temp = count % nol;
+        int temp = count / nol;
         int rem = count % nol;
         int nof = 0;
         if (temp != 0) {
@@ -32,7 +32,7 @@ public class SplitFileExample {
                 nof = temp;
             }
         }
-        System.out.println("No of file =" + nof);
+        System.out.println("No of file = " + nof);
 
         //create file and write data
         BufferedReader br = new BufferedReader(new FileReader(s));

@@ -7,8 +7,8 @@ import java.io.IOException;
 public class CopyDataFromOneToAnotherFile {
 
     public static void main(String[] args) throws IOException {
-        FileInputStream fis = new FileInputStream("D://faltu//copydata.txt");
-        FileOutputStream fos = new FileOutputStream("D://faltu//copydata1.txt");
+        FileInputStream fis = new FileInputStream("E:\\IoFiles\\copydata.txt");
+        FileOutputStream fos = new FileOutputStream("E:\\IoFiles\\copydata1.txt");
 
         int i;
         while ((i = fis.read()) != -1) {

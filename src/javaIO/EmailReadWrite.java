@@ -8,19 +8,21 @@ public class EmailReadWrite {
         BufferedReader br = new BufferedReader(new FileReader("E:\\IoFiles\\mail.txt"));
 
         FileWriter fw = new FileWriter("E:\\IoFiles\\mailWrite.txt");
-        PrintWriter pw = new PrintWriter(fw);
+       // PrintWriter pw = new PrintWriter(fw);
 
         String s = br.readLine();
 
         while (s != null) {
             if (s.endsWith("@gmail.com")) {
-                pw.println(s);
+                //pw.println(s);
+                fw.write(s);
                 System.out.println(s);
             }
             s = br.readLine();
         }
 
-        pw.close();
+        //pw.close();
+        fw.close();
 
 
     }
